@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plantura Exports</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+      /* Mobile-First Responsive Enhancements */
+      
+      /* Improved mobile header */
+      @media (max-width: 768px) {
+        .py-1.bg-primary .row {
+          flex-direction: column;
+        }
+        
+        .topper {
+          justify-content: center !important;
+          margin-bottom: 8px;
+          padding: 5px 0;
+        }
+        
+        .topper .text {
+          font-size: 12px;
+        }
+        
+        .navbar-brand {
+          font-size: 18px !important;
+          padding: 10px 0;
+        }
+        
+        .navbar-toggler {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+        
+        /* Mobile navigation improvements */
+        .navbar-collapse {
+          background: #212529;
+          padding: 15px;
+          margin-top: 10px;
+          border-radius: 5px;
+        }
+        
+        .navbar-nav .nav-item {
+          margin: 5px 0;
+        }
+        
+        .dropdown-menu {
+          background: #343a40;
+          border: none;
+          margin-left: 15px;
+        }
+        
+        .dropdown-item {
+          color: #fff !important;
+          padding: 10px 15px;
+        }
+        
+        .dropdown-item:hover {
+          background: #495057;
+        }
+      }
+      /* Fix hero slider height & scrolling */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-item {
+  min-height: 75vh !important;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+.home-slider, .owl-carousel {
+  touch-action: pan-y !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+      /* Hero section responsive */
+      .hero .slider-text h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero .slider-text h2 {
+        font-size: 1.5rem;
+      }
+      
+      @media (max-width: 768px) {
+        .hero .slider-text h1 {
+          font-size: 1.8rem;
+          margin-bottom: 15px;
+        }
+        
+        .hero .slider-text h2 {
+          font-size: 1.1rem;
+          margin-bottom: 20px;
+        }
+        
+        .hero .btn {
+          padding: 12px 30px;
+          font-size: 14px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .hero .slider-text h1 {
+          font-size: 1.5rem;
+        }
+        
+        .hero .slider-text h2 {
+          font-size: 1rem;
+        }
+      }
+      
+      /* Services section mobile */
+      @media (max-width: 768px) {
+        .ftco-services .col-md-3 {
+          margin-bottom: 20px;
+        }
+        
+        .block-6 {
+          padding: 20px;
+        }
+        
+        .block-6 .heading {
+          font-size: 18px;
+        }
+      }
+      
+      /* Category section mobile */
+      @media (max-width: 768px) {
+        .ftco-category .col-md-8,
+        .ftco-category .col-md-4 {
+          margin-bottom: 20px;
+        }
+        
+        .category-wrap,
+        .category-wrap-2 {
+          min-height: 250px;
+        }
+        
+        .category-wrap h2,
+        .category-wrap-2 h2 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      /* Product grid responsive */
+      @media (max-width: 768px) {
+        .product {
+          margin-bottom: 30px;
+        }
+        
+        .product .img-prod img {
+          width: 100%;
+          height: auto;
+        }
+        
+        .product h3 {
+          font-size: 1.1rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .col-lg-3 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+      
+      /* Footer responsive */
+      @media (max-width: 768px) {
+        .ftco-footer .col-md {
+          margin-bottom: 30px;
+        }
+        
+        .ftco-footer-widget h2 {
+          font-size: 1.3rem;
+        }
+        
+        .ftco-footer-widget .list-unstyled li {
+          font-size: 14px;
+        }
+        
+        .block-23 ul li {
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+      }
+      
+      /* Touch-friendly buttons */
+      .btn {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px 24px;
+      }
+      
+      /* Improved tap targets */
+      a, button, .nav-link, .dropdown-toggle {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+      
+      /* Smooth scrolling for all devices */
+      html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      /* Prevent zoom on input focus (iOS) */
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+      
+      /* Better image loading */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      /* Container padding for mobile */
+      @media (max-width: 768px) {
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      
+      /* Landscape orientation handling */
+      @media (max-width: 768px) and (orientation: landscape) {
+        .hero {
+          min-height: 400px;
+        }
+        
+        .hero .slider-text h1 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      /* Safe area insets for iOS devices with notch */
+      @supports (padding-top: env(safe-area-inset-top)) {
+        .navbar {
+          padding-top: calc(env(safe-area-inset-top) + 10px);
+        }
+        
+        .ftco-footer {
+          padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+        }
+      }
+    </style>
+	
+  </head>
+   <body class="goto-here">
+
+    <!-- Top Bar -->
+		<div class="py-1 bg-primary">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+		    			<div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">+919011454142 / +917448041204</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">planturaexport@gmail.com</span>
+					    </div>
+					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">PLANTURA EXPORTS</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="vegetable.html">Vegetables</a>
+              	<a class="dropdown-item" href="fruits.html">Fruits</a>
+                <a class="dropdown-item" href="millet.html">Millets</a>
+                <a class="dropdown-item" href="cereal.html">Cereal</a>
+                <a class="dropdown-item" href="index.html">other</a>
+              </div>
+            </li>
+<li class="nav-item">
+  <a href="Catalogue.pdf" class="nav-link" target="_blank" rel="noopener">
+    Catalog
+  </a>
+</li>
+
+
+
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END NAV -->
+    
+    <!-- hero section  -->
+
+<section id="home-section" class="hero" style="position: relative; overflow: hidden;">
+  <div class="slider-item" 
+       style="
+         background-image: url('images/bg_1.jpg');
+         background-size: cover;
+         background-position: center;
+         width: 100%;
+         min-height: 65vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+       ">
+    
+    <div class="overlay" style="
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+    "></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row slider-text justify-content-center align-items-center">
+        <div class="col-md-12 text-center">
+          <h1 class="mb-2" style="color:white;">We serve Fresh Vegetables &amp; Fruits</h1>
+          <h2 class="subheading mb-4" style="color:white;">We deliver organic vegetables &amp; fruits</h2>
+          <p><a href="contact.html" class="btn btn-primary">Enquire now</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- attribute elements 4 -->
+
+    <section class="ftco-section">
+			<div class="container">
+				<div class="row no-gutters ftco-services">
+          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-shipped"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Fast Shipping</h3>
+                <span>All over the Globe</span>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-diet"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Always Fresh</h3>
+                <span>Product well package</span>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-award"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Superior Quality</h3>
+                <span>Quality Products</span>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-customer-service"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Support</h3>
+                <span>24/7 Support</span>
+              </div>
+            </div>      
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-category ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-6 order-md-last align-items-stretch d-flex">
+								<div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url(images/category.jpg);">
+									<div class="text text-center">
+										<h2>Vegetables</h2>
+										<p>Protect the health of every home</p>
+										<p><a href="contact.html" class="btn btn-primary">Contact now</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/category-1.jpg);">
+									<div class="text px-3 py-1">
+										<h2 class="mb-0"><a href="vegetable.html">Vegetables</a></h2>
+									</div>
+								</div>
+								<div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(images/category-2.jpg);">
+									<div class="text px-3 py-1">
+										<h2 class="mb-0"><a href="fruits.html">Fruits</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/millets.jpg);">
+							<div class="text px-3 py-1">
+								<h2 class="mb-0"><a href="millet.html">Millets</a></h2>
+							</div>		
+						</div>
+						<div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(images/ceral.jpg);">
+							<div class="text px-3 py-1">
+								<h2 class="mb-0"><a href="cereal.html">Cereal</a></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <!-- product gallary -->
+
+    <section class="ftco-section">
+    	<div class="container">
+				<div class="row justify-content-center mb-3 pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">Featured Products</span>
+            <h2 class="mb-4">Our Products</h2>
+            <p>Far far away, behind the word mountains, far from the Indiana State</p>
+			      <p>We Specialize in Export of Oranges and Cluster Beans</p>
+          </div>
+        </div>   		
+    	</div>
+    	
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="orange.html" class="img-prod"><img class="img-fluid" src="images/orange2.jpg" alt="Oranges">
+    						<div class="overlay"></div>
+							  <p style="text-align: center;">Best Seller</p>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="orange.html">Oranges</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="strawbery.html" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Strawberry">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="strawbery.html">Strawberry</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="peanuts.html" class="img-prod"><img class="img-fluid" src="images/shengdane.jpg" alt="Ground nuts">
+	    					<div class="overlay"></div>
+	    				</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="peanuts.html">Ground nuts</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="basmati.html" class="img-prod"><img class="img-fluid" src="images/basmati.jpg" alt="Basmati Rice">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="basmati.html">Basmati Rice</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="jowar.html" class="img-prod"><img class="img-fluid" src="images/Jowar.png" alt="Jowar">
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="jowar.html">Jowar</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="jaggery.html" class="img-prod"><img class="img-fluid" src="images/jaggu.jpg" alt="Jaggery">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="jaggery.html">Jaggery</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="bajra.html" class="img-prod"><img class="img-fluid" src="images/bajraa.jpg" alt="Bajra">
+	    					<div class="overlay"></div>
+	    				</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="bajra.html">Bajra</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product">
+    					<a href="guar.html" class="img-prod"><img class="img-fluid" src="images/guar.jpg" alt="Cluster Beans">
+    						<div class="overlay"></div>
+							  <p style="text-align: center;">Best Seller</p>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="guar.html">Cluster Beans</a></h3>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <!-- footer -->
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+      	<div class="row">
+      		<div class="mouse">
+						<a href="#" class="mouse-icon">
+							<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+						</a>
+					</div>
+      	</div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">PLANTURA</h2>
+              <p>Far far away, behind the word mountains, far from the Indiana states.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/plantura_exports?igsh=MTY0c24ybXphdXYzdg=="><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="py-2 d-block">About</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+	                <li><a href="shipping.html" class="py-2 d-block">Shipping Information</a></li>
+	                <li><a href="tac.html" class="py-2 d-block">Terms &amp; Conditions</a></li>
+	              </ul>
+	              <ul class="list-unstyled">
+	                <li><a href="faq.html" class="py-2 d-block">FAQs</a></li>
+	                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Question?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text"> A/p Wagholi, Wagheshwar Nagar, Tal-haveli, Dist-pune, Vagholi, Pune, Haveli, Maharashtra, India, 412207</span></li>
+	                <li><a href="tel:+919011454142"><span class="icon icon-phone"></span><span class="text">+919011454142 / +917448041204</span></a></li>
+	                <li><a href="mailto:planturaexport@gmail.com"><span class="icon icon-envelope"></span><span class="text">planturaexport@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+           <p>&copy; 2025 Plantura Exports | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
